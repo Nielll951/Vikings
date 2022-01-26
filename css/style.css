@@ -149,3 +149,14 @@ ul {
    left: 0;
    background-image: url('../images/youtube-btn.svg');
 }
+
+.seasons__inner {}
+
+.seasons__item {
+   width: 350px;
+   height: 250px;
+   background-image: url('../images/seasons-image-2.jpg');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+}
