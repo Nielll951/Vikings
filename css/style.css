@@ -206,3 +206,18 @@ ul {
    transition: all .3s;
    z-index: 1;
 }
+
+.heroes__inner {
+   display: flex;
+   justify-content: space-between;
+}
+
+.heroes__slider-img {
+   max-width: 775px;
+}
+
+.heroes__text {
+   max-width: 350px;
+}
+
+.heroes__name {}
