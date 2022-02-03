@@ -227,6 +227,7 @@ button {
 
 .heroes__slider-img {
    max-width: 775px;
+   position: relative;
 }
 
 .heroes__slider-text {
@@ -261,6 +262,31 @@ button {
 
 .slick-next {
    right: 38px;
+}
+
+.slick-dots {
+   display: flex;
+   justify-content: center;
+   transform: translateY(-40px);
+}
+
+.slick-dots li {
+   padding: 0 5px;
+}
+
+.slick-dots button {
+   font-size: 0;
+   padding: 0;
+   width: 13px;
+   height: 13px;
+   border-radius: 50%;
+   border: 1px solid #fff;
+   outline: none;
+   background-color: transparent;
+}
+
+.slick-dots .slick-active button {
+   background-color: #fff;
 }
 
 .copy {
@@ -325,8 +351,18 @@ button {
 
 
 /* start media */
+@media (max-width: 1420px) {
+   .page-logo {
+      left: 10px;
+      top: -6px;
+   }
+}
 
 @media (max-width: 1366px) {
+   .page-header {
+      height: 120vh;
+   }
+
    .logo__img {
       max-width: 80%;
    }
@@ -362,6 +398,12 @@ button {
    }
 }
 
+@media (max-width: 992px) {
+   .page-logo {
+      display: none;
+   }
+}
+
 @media (max-width: 768px) {
    body {
       font-size: 16px;
@@ -374,6 +416,8 @@ button {
 
    .title {
       margin-bottom: 50px;
+      font-size: 28px;
+      line-height: 36px;
    }
 
    .about__inner {
@@ -401,6 +445,23 @@ button {
       top: -16px;
    }
 
+   .season-info {
+      display: block;
+      padding: 30px 10px 0px 10px;
+   }
+
+   .season-info__num {
+      text-align: left;
+      font-size: 50px;
+      line-height: 26px;
+      margin-bottom: 15px;
+   }
+
+   .season-info__num span {
+      font-size: 25px;
+      line-height: 32px;
+   }
+
    .seasons__inner {
       grid-gap: 80px 35px;
    }
@@ -408,11 +469,17 @@ button {
    .slick-btn {
       display: none;
    }
+
+   .heroes__name {
+      font-size: 46px;
+      line-height: 56px;
+      margin-bottom: 25px;
+   }
 }
 
 @media (max-width: 640px) {
    .menu__list {
-      display: none;
+      display: block;
    }
 
    .logo {
